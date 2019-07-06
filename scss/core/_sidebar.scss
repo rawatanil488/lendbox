@@ -1,0 +1,101 @@
+.side-bar {
+  padding: 15px;
+  .user_name{
+    color: white;
+  }
+  .user_contact{
+   color: grey;
+   font-size: 0.7rem;
+  }
+  .profile_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: green;
+    cursor: pointer;
+    &:focus, &:hover {
+      color: white;
+      a{
+        color: white;
+      }
+    }
+    a{
+      color: green;
+      font-size: 0.7rem;
+      text-decoration: none;
+      &:focus, &:hover {
+        color: white;
+      }
+    }
+  }
+  .Sidebar-options{
+    padding: 0px;
+    font-size: 0.8rem;
+    .sub-option{
+      color: white;
+    }
+    .active{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px;
+      border-left: 2px solid white;
+      color: white;
+      text-decoration: none;
+      background-color: black;
+    }
+    .inactive {
+      display: flex;
+      align-items: center;
+      padding: 9px;
+      font-family: "Lato", sans-serif;
+      justify-content: space-between;
+      color: grey;
+      text-decoration: none;
+    }
+  }
+  .sidebar-footer{
+    position: absolute;
+    bottom: 0%;
+    min-width: 250px;
+    .copyright {
+      font-size: 0.5rem;
+      min-width: 100%;
+      color: grey;
+      text-align: center;
+    }
+    .footer-option {
+      text-align: center;
+      &:hover {
+        background-color: black;
+      }
+      .option-icon{
+        color: grey;
+        font-size: 2.0rem;
+      }
+      .option-text{
+        color: grey;
+        white-space: nowrap;
+        font-size: 0.5rem;
+      }
+    }
+  }
+  .btn-steps {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    &:focus, &:active, &:hover {
+      background-color: rgb(49, 110, 51);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar-footer{
+      position: unset;
+    }
+  }
+}
